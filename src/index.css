@@ -1,13 +1,85 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Gill Sans", sans-serif;
+  background-color: slategray;
+  padding: 10px;
+  background-image: url("./images/white_gradient.jpg");
+  background-size: cover;
+  padding: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.image-container {
+  background-image: url("./images/CliffsOfMoherIrelandCoastal.jpg"); /* The image used - important! */
+  background-size: cover;
+  position: relative; /* Needed to position the cutout text in the middle of the image */
+  height: 190px; /* Some height */
+  margin: 20px;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 10vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 10px;
+  width: 80%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+}
+
+.weather-container {
+  color: white;
+  margin: auto;
+  padding: 5px;
+  background-color: whitesmoke;
+  border-color: steelblue;
+  /* box-shadow: 5px 5px 5px 5px aliceblue, 5px 5px 5px 5px aliceblue; */
+
+  box-shadow: 10px 4px 8px 0 aliceblue, 0 6px 20px 0 aliceblue;
+  border-radius: 10px;
+  width: 95%;
+  height: 300px;
+  background-image: url("./images/sunny-sky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.topnav {
+  padding: 1px;
+  margin: 10px;
+  text-align: center;
+}
+.search {
+  height: 100px;
+}
+.search-field {
+  height: 50%;
+  width: 95%;
+  font-size: x-large;
+}
+.search-btn {
+  height: 60px;
+  width: 50px;
+  border-style: double;
+}
+.footer {
+  margin-top: 40px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+}
+.stuff {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  text-align: center;
 }
